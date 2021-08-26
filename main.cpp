@@ -18,6 +18,24 @@ int main() {
         for(int i=0;i<row;i++)
             for(int j=0;j<col;j++)
                 cin>>M[i][j];
+
+        int diagonal;
+        
+        for(int i=0;i<row;i++) 
+            if( M[i][i] == 1 )          diagonal++;
+
+        if(diagonal == row)                       cout<<endl<<"There is a reflection property"<<endl;
+        
+        else {
+            
+            cout<<endl<<"There is no reflection property"<<endl;
+            cout<<"reflection extension = { ";
+            
+            for(int i=0;i<row;i++) 
+                if( M[i][i] == 0 ) 
+                    cout<<"("<<i<<","<<i<<")"<<",";
+            cout<<" \b\b }"<<"\n";
+        }    
     }
 
     else {
