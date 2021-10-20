@@ -6,6 +6,10 @@ if all the elements of the original diameter of the matrix are 1, the matrix is 
 
 #### **How to run the program with dockerfile:**
 
+```
+g++ -o matrix main.cpp 
+```
+
 *base image ubuntu:latest*
 
 ```docker
